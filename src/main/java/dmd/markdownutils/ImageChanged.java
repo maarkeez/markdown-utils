@@ -1,8 +1,11 @@
 package dmd.markdownutils;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
+@Slf4j
 public class ImageChanged {
 	private String name;
 	private String fileExtension;
@@ -17,8 +20,8 @@ public class ImageChanged {
 		destPath = imagesPath.resolve(counterWithZeros(imageNumber) + "." + fileExtension);
 		markDownImageChanged = "![" + name + "](" + getDestPath() + ")";
 
-		System.out.println("Image found: " + markDownImage);
-		System.out.println("Replacing by: " + getMarkDownImageChanged());
+		log.info("Image found: " + markDownImage);
+		log.info("Replacing by: " + getMarkDownImageChanged());
 
 	}
 
