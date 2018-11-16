@@ -1,4 +1,4 @@
-package markdownutils;
+package dmd.markdownutils;
 
 import java.io.IOException;
 import java.nio.file.Path;
@@ -9,7 +9,7 @@ public class Application {
 	public static void main (String[] args) throws IOException {
 		
 		if(args == null || args.length != 2) {
-			System.out.println("Usage: markdownutils /markdown-file.md relative/dest/image/path");
+			System.out.println("Usage: dmd.markdownutils /markdown-file.md relative/dest/image/path");
 			return;
 		}
 		

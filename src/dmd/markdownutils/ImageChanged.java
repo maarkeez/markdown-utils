@@ -1,4 +1,4 @@
-package markdownutils;
+package dmd.markdownutils;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;

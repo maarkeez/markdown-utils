@@ -1,4 +1,4 @@
-package markdownutils;
+package dmd.markdownutils;
 
 import java.util.ArrayList;
 import java.util.List;
